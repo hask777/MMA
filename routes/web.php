@@ -19,3 +19,4 @@ Route::get('/fighter/{id}', 'FightersController@show')->name('fighter');
 Route::get('/leagues', 'LeaguesController@index');
 Route::get('/shedules', 'ShedulesController@index');
 Route::get('/shedule/{id}', 'ShedulesController@show')->name('shedule');
+Route::get('/eventfightodd', 'OddsController@index')->name('eventfightodd');

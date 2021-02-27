@@ -1,6 +1,9 @@
-@foreach($shedules as $shedule)
+@extends('main')
+@section('content')
+    @foreach($shedules as $shedule)
     <div>
         <a href="{{route('shedule', [$shedule['EventId']])}}">{{ $shedule['Name'] }}||{{ $shedule['Season'] }}||{{ $shedule['Day'] }}</a>
         
     </div>
-@endforeach
+    @endforeach
+@endsection 
