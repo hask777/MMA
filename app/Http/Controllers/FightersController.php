@@ -20,7 +20,8 @@ class FightersController extends Controller
 
         $fighters =  Http::withHeaders(['Ocp-Apim-Subscription-Key'=>$last_key])->get('https://api.sportsdata.io/v3/mma/scores/json/Fighters')->json();
 
-        //dd($fighters);
+        
+        //dd($fighters[0]['CareerStats']);
 
         return view('fighters',[
             'fighters' => $fighters

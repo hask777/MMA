@@ -7,7 +7,23 @@
             <div>
                 <a href="{{route('fighter', [$fighter['FighterId']])}}">{{ $fighter['FirstName'] }}||{{ $fighter['LastName'] }}</a> 
             </div>
-            
+            {{-- NICNAME --}}
+            {{-- WEIGHT --}}
+            {{-- BirthDate  --}}
+            {{-- Height --}}
+            {{-- Weight --}}
+            {{-- Rich --}}
+            {{-- Wins --}}
+            {{-- Losess --}}
+            {{-- Draws --}}
+            {{-- TechnicalKnockouts --}}
+            {{-- TechnicalKnockoutLosses --}}
+            {{-- Submissions --}}
+            {{-- SubmissionLosses --}}
+            {{-- TitleWins --}}
+            {{-- TitleLosses --}}
+            {{-- TitleDraws --}}
+            {{-- CareerStats --}}
 
             <div class="fighter_img">
                 @include('parts.user')
