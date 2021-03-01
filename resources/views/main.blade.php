@@ -9,26 +9,41 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
 </head>
-<body>
-    <header>
-        header
+<body class="bg-gray-200">
+    <header class="bg-black flex justify-between text-white p-6">
+        
         <div class="logo">
             Лого
         </div>
+
         <div class="main_menu">         
-            <ul>
-                <li>Бои</li>
-                <li>Бойцы</li>
-                <li>Турниры</li>
+            <ul class="flex">
+                <li class="pl-2 pr-2">
+                    <a href="/shedules"> Бои</a>
+                   
+                </li>
+                <li class="pl-2 pr-2">
+                    <a href="/">Бойцы</a>
+                    
+                </li>
+                <li class="pl-2 pr-2">
+                    <a href="/leagues">Турниры</a>
+                    
+                </li>
             </ul>
         </div>
+
+        <div class="login">
+            login
+        </div>
+
     </header>
 
-    <div class="content">
+    <div class="content w-4/5 m-auto mt-4">
         @yield('content')
     </div>
        
-    <footer>
+    <footer class="bg-black">
         footer
     </footer>
 </body>
