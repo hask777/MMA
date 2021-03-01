@@ -5,7 +5,7 @@
 
     <a href="{{route('fighter', [$fighter['FighterId']])}}">
         <div class="bg-white mt-4 mb-4 p-2">
-                    
+
             <h1 class="font-bold text-2xl ">{{ $fighter['FirstName'] }}  {{ $fighter['LastName'] }} 
                 <span class="ml-4 text-red-500">{{ $fighter['Nickname'] }}</span>
                 <span class="text-xl ml-10">{{ $fighter['WeightClass'] }}</span>
